@@ -19,23 +19,23 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Healthy Ways"
+        android:text="@string/app_name"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
-        android:textSize="28dp"
+        android:textSize="28sp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developed By IoT Lab, KIIT"
+        android:text="@string/credits"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginTop="12dp"
         android:layout_below="@id/name"
         android:layout_centerHorizontal="true"
-        android:textSize="18dp"
+        android:textSize="18sp"
         />
 
 </RelativeLayout>

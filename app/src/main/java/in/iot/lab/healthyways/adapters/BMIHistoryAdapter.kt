@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.bmi_history_item.view.*
 import java.text.DecimalFormat
 import java.util.*
 
-class BMIHistoryAdapter(private val context: Context, private val listener: BMIHistoryAdapter.IBMIHistoryRVAdapter):
+class BMIHistoryAdapter(private val context: Context, private val listener: IBMIHistoryRVAdapter):
                         RecyclerView.Adapter<BMIHistoryAdapter.BMIHistoryViewHolder>() {
 
      private val allBmiHistory = ArrayList<BMIHistoryEntity>()

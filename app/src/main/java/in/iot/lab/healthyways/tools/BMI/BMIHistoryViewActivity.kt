@@ -34,8 +34,7 @@ class BMIHistoryViewActivity : AppCompatActivity(), BMIHistoryAdapter.IBMIHistor
         }
 
         val bmiHistoryRecyclerView = rvAllBmiHistory
-        val adapter =
-            BMIHistoryAdapter(this, this)
+        val adapter = BMIHistoryAdapter(this, this)
         bmiHistoryRecyclerView.adapter = adapter
         bmiHistoryRecyclerView.layoutManager = LinearLayoutManager(this)
 

@@ -72,10 +72,10 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilMetricUnitWeight"
-                android:padding="8dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="8dp">
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etMetricUnitWeight"
@@ -88,11 +88,10 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilMetricUnitHeight"
-                android:padding="8dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               >
+                android:padding="8dp">
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etMetricUnitHeight"
@@ -113,10 +112,10 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilUsUnitWeight"
-                android:padding="8dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:visibility="visible">
 
                 <androidx.appcompat.widget.AppCompatEditText
@@ -134,17 +133,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:baselineAligned="false"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilUsUnitHeightFeet"
-                    android:padding="8dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:padding="8dp">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/etUsUnitHeightFeet"
@@ -157,12 +155,12 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilUsUnitHeightInch"
-                    android:padding="8dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:padding="8dp">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/etUsUnitHeightInch"
@@ -175,6 +173,7 @@
 
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/llDisplayBMIResult"
             android:layout_width="match_parent"
@@ -187,21 +186,20 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/ic_bmi"
                 android:layout_gravity="center"
                 android:padding="16dp"
-                />
+                android:src="@drawable/ic_bmi" />
 
             <TextView
                 android:id="@+id/tvYourBMI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:padding="8dp"
                 android:text="YOUR BMI"
                 android:textAllCaps="true"
                 android:textColor="@color/colorAccent"
                 android:textSize="26sp"
-                android:padding="8dp"
                 android:textStyle="bold"
                 android:visibility="visible" />
 
@@ -211,9 +209,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
+                android:textColor="#0091EA"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#0091EA"
                 tools:text="15.00" />
 
             <TextView
@@ -222,9 +220,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
+                android:textColor="#AEEA00"
                 android:textSize="22sp"
                 android:textStyle="italic|bold"
-                android:textColor="#AEEA00"
                 tools:text="Normal" />
 
             <TextView
@@ -233,8 +231,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:textSize="18sp"
                 android:textColor="#AEEA00"
+                android:textSize="18sp"
                 tools:text="Normal" />
         </LinearLayout>
 

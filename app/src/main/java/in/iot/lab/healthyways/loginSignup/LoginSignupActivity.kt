@@ -1,6 +1,8 @@
 package `in`.iot.lab.healthyways.loginSignup
 
+import `in`.iot.lab.healthyways.MainActivityBottomNav
 import `in`.iot.lab.healthyways.R
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rilixtech.widget.countrycodepicker.CountryCodePicker
@@ -15,7 +17,10 @@ class LoginSignupActivity : AppCompatActivity() {
 
         ccp.registerPhoneNumberTextView(edtPhone)
 
-
+        fabBtnProceed.setOnClickListener{
+            val intent = Intent(this,MainActivityBottomNav::class.java)
+            startActivity(intent)
+        }
 
 
 

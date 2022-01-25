@@ -14,14 +14,10 @@ import kotlinx.android.synthetic.main.activity_main_bottom_nav.*
 
 class MainActivityBottomNav : AppCompatActivity() {
 
-    private val toolsFragment =
-        ToolsFragment()
-    private val historyFragment =
-        HistoryFragment()
-    private val exerciseFragment =
-        ExerciseFragment()
-    private val aboutUsFragment =
-        AboutUsFragment()
+    private val toolsFragment = ToolsFragment()
+    private val historyFragment = HistoryFragment()
+    private val exerciseFragment = ExerciseFragment()
+    private val aboutUsFragment = AboutUsFragment()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,8 +28,6 @@ class MainActivityBottomNav : AppCompatActivity() {
 
         val actionBar = supportActionBar
         actionBar!!.title = " Healthy Ways"
-
-
 
         replaceFragments(toolsFragment)
 

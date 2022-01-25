@@ -1,4 +1,4 @@
-  package `in`.iot.lab.healthyways.exercise
+package `in`.iot.lab.healthyways.exercise
 
 import `in`.iot.lab.healthyways.Constants
 import `in`.iot.lab.healthyways.R

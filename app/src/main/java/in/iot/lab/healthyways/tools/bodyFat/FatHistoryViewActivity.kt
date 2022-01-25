@@ -41,7 +41,7 @@ class FatHistoryViewActivity : AppCompatActivity(), FatHistoryAdapter.IGCHistory
         val adapter =
             FatHistoryAdapter(this, this)
         fatHistoryRecyclerView.adapter = adapter
-        fatHistoryRecyclerView.layoutManager = LinearLayoutManager(this)
+        fatHistoryRecyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
 
         viewModel = ViewModelProvider(this,
             ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(HistoryViewModel::class.java)

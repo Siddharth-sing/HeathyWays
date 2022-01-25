@@ -23,9 +23,10 @@
             android:id="@+id/ccp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/imgWork"
             android:layout_marginLeft="30dp"
             android:layout_marginBottom="5dp"
-            android:layout_below="@+id/imgWork"/>
+            />
 
         <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/mTxtPhone"
@@ -100,18 +101,20 @@
     </RelativeLayout>
 
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBtnProceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_forward"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:elevation="18dp"
-        android:layout_margin="18dp"
-        app:rippleColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
         android:backgroundTint="@color/gradientColor2"
+        android:elevation="18dp"
         android:onClick="openLoginIntent"
-        />
+        android:src="@drawable/ic_forward"
+        app:rippleColor="#FFFFFF" />
 
 </RelativeLayout>
